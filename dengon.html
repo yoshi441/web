@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+const doDengon = () => {
+  if (sentence.value === "") {
+    alert("内容を入力してください");
+  } else {
+    area.innertext = sentence.value;
+    alert("伝言をセットしました");
+    sentence.value = "";
+  }
+};
+</script>
+  </head>
+  <body>
+    <h1>伝言板</h1>
+    <p id="area">伝言はまだない</p>
+    <input id="sentence"><button onclick="doDengon();">Set</input>
+  </body>
+</html>
